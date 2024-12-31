@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  height: 140vh;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#cameraContainer {
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+#videoFeed {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+#currentModel {
+  z-index: 1000;
+  font-size: 17px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các nút */
+  margin-top: 20px; /* Khoảng cách từ phần trên */
+}
+
+/* Thêm quy tắc cho khung select */
+select {
+  padding: 10px;
+  border: 2px solid black; /* Màu viền */
+  border-radius: 5px; /* Bo góc */
+  font-size: 16px; /* Kích thước chữ */
+  outline: none; /* Bỏ viền khi chọn */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+select:focus {
+  border-color: #45a049; /* Màu viền khi chọn */
+}
+
+/* Thêm quy tắc cho nút input tệp */
+input[type="file"] {
+  display: none; /* Ẩn nút input tệp mặc định */
+}
+
+.label-file {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.label-file:hover {
+  background-color: #45a049; /* Màu nền khi hover */
+}
+
+/* Thêm quy tắc cho nút khi chưa có tệp được chọn */
+.button-container .file-button {
+  background-color: #f44336; /* Màu nền khi chưa có tệp */
+  color: white; /* Màu chữ */
+  border: 2px solid #d32f2f; /* Viền đỏ */
+}
